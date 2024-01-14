@@ -9,7 +9,6 @@ export const TextInput: React.FC<TextInputProps> = ({ onInputChange }) => {
   const [inputValue, setInputValue] = useState("");
 
   const handleOptionSelect = (selectedOption: string) => {
-    console.log("Selected option:", selectedOption);
     setInputValue(selectedOption);
   };
 
