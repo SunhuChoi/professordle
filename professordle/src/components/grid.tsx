@@ -2727,7 +2727,7 @@ export const Grid: React.FC = () => {
         {randomWord}
       </div>
       <div className="guess-grid">
-        <div className="wordletile">{inputValue}</div>
+        <div className="wordletile"></div>
         <div className="wordletile"></div>
         <div className="wordletile"></div>
         <div className="wordletile"></div>
