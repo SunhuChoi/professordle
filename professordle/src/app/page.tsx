@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { TextInput } from "../components/textinput";
 import { Grid } from "../components/grid";
+import React from "react";
 import "./styles.css";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Grid></Grid>
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <Grid />
+    </main>
   );
 }

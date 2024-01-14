@@ -91,9 +91,21 @@ body {
   margin-bottom: 1em;
 }
 
-.wordletile {
+.wordletiletrue {
   font-size: 0.5em;
-  color: white;
+  color: rgb(0, 255, 34);
+  border: 0.05em solid hsl(240, 2%, 23%);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: transform 250ms linear;
+}
+
+.wordletilefalse {
+  font-size: 0.5em;
+  color: red;
   border: 0.05em solid hsl(240, 2%, 23%);
   font-weight: bold;
   display: flex;
@@ -213,4 +225,10 @@ body {
 
 .alert.hide {
   opacity: 0;
+}
+
+.dropdown {
+  background-color: hsl(0, 0%, 100%);
+  border: 0.05em solid hsl(240, 2%, 23%);
+  color: black;
 }

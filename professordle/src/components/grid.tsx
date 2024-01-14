@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { TextInput } from "./textinput";
+import { Menu } from "./menu";
 
 export const Grid: React.FC = () => {
   const options = [
@@ -2711,47 +2712,185 @@ export const Grid: React.FC = () => {
     "ZYLSTRA S J",
   ];
 
-  const [inputValue, setInputValue] = useState("");
+  const [randomString, setRandomString] = useState("");
 
-  const handleInputChange = (newValue: string) => {
-    setInputValue(newValue);
+  const [inputValue1, setInputValue1] = useState("");
+  const [inputValue2, setInputValue2] = useState("");
+  const [inputValue3, setInputValue3] = useState("");
+  const [inputValue4, setInputValue4] = useState("");
+  const [inputValue5, setInputValue5] = useState("");
+  const [inputValue6, setInputValue6] = useState("");
+
+  const [tileValue1, setTileValue1] = useState("");
+  const [tileValue2, setTileValue2] = useState("");
+  const [tileValue3, setTileValue3] = useState("");
+  const [tileValue4, setTileValue4] = useState("");
+  const [tileValue5, setTileValue5] = useState("");
+  const [tileValue6, setTileValue6] = useState("");
+
+  const [counter, setCounter] = useState(1);
+
+  const handleIncrement = () => {
+    setCounter((prevCounter) => prevCounter + 1);
   };
 
-  const randomIndex = Math.floor(Math.random() * options.length);
-  const randomWord = options[randomIndex];
+  const handleRandomString = () => {
+    const randomIndex = Math.floor(Math.random() * options.length);
+    setRandomString(options[randomIndex]);
+  };
+
+  const handleInputChange = (newValue: string) => {
+    handleIncrement();
+    console.log();
+    if (counter === 1) {
+      setInputValue1(newValue);
+      if (newValue.toLowerCase() === randomString.toLowerCase()) {
+        console.log("Entered this");
+        setTileValue1("wordletiletrue");
+      } else {
+        setTileValue1("wordletilefalse");
+      }
+    } else if (counter === 2) {
+      setInputValue2(newValue);
+      if (newValue.toLowerCase() === randomString.toLowerCase()) {
+        console.log("Entered this");
+        setTileValue2("wordletiletrue");
+      } else {
+        setTileValue2("wordletilefalse");
+      }
+    } else if (counter === 3) {
+      setInputValue3(newValue);
+      if (newValue.toLowerCase() === randomString.toLowerCase()) {
+        console.log("Entered this");
+        setTileValue3("wordletiletrue");
+      } else {
+        setTileValue3("wordletilefalse");
+      }
+    } else if (counter === 4) {
+      setInputValue4(newValue);
+      if (newValue.toLowerCase() === randomString.toLowerCase()) {
+        console.log("Entered this");
+        setTileValue4("wordletiletrue");
+      } else {
+        setTileValue4("wordletilefalse");
+      }
+    } else if (counter === 5) {
+      setInputValue5(newValue);
+      if (newValue.toLowerCase() === randomString.toLowerCase()) {
+        console.log("Entered this");
+        setTileValue5("wordletiletrue");
+      } else {
+        setTileValue5("wordletilefalse");
+      }
+    } else if (counter === 6) {
+      setInputValue6(newValue);
+      if (newValue.toLowerCase() === randomString.toLowerCase()) {
+        console.log("Entered this");
+        setTileValue6("wordletiletrue");
+      } else {
+        setTileValue6("wordletilefalse");
+      }
+    }
+  };
 
   return (
     <div>
+      <Menu />
+      <button onClick={handleRandomString}>Hi {randomString}</button>
       <div>
         <TextInput onInputChange={handleInputChange}></TextInput>
-        {randomWord}
       </div>
       <div className="guess-grid">
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
-        <div className="wordletile"></div>
+        <div className={tileValue1}>
+          {counter >= 1 && <div>{inputValue1}</div>}
+        </div>
+        <div className={tileValue1}>
+          {counter >= 1 && <div>{inputValue1}</div>}
+        </div>
+        <div className={tileValue1}>
+          {counter >= 1 && <div>{inputValue1}</div>}
+        </div>
+        <div className={tileValue1}>
+          {counter >= 1 && <div>{inputValue1}</div>}
+        </div>
+        <div className={tileValue1}>
+          {counter >= 1 && <div>{inputValue1}</div>}
+        </div>
+        <div className={tileValue2}>
+          {counter >= 2 && <div>{inputValue2}</div>}
+        </div>
+        <div className={tileValue2}>
+          {counter >= 2 && <div>{inputValue2}</div>}
+        </div>
+        <div className={tileValue2}>
+          {counter >= 2 && <div>{inputValue2}</div>}
+        </div>
+        <div className={tileValue2}>
+          {counter >= 2 && <div>{inputValue2}</div>}
+        </div>
+        <div className={tileValue2}>
+          {counter >= 2 && <div>{inputValue2}</div>}
+        </div>
+        <div className={tileValue3}>
+          {counter >= 3 && <div>{inputValue3}</div>}
+        </div>
+        <div className={tileValue3}>
+          {counter >= 3 && <div>{inputValue3}</div>}
+        </div>
+        <div className={tileValue3}>
+          {counter >= 3 && <div>{inputValue3}</div>}
+        </div>
+        <div className={tileValue3}>
+          {counter >= 3 && <div>{inputValue3}</div>}
+        </div>
+        <div className={tileValue3}>
+          {counter >= 3 && <div>{inputValue3}</div>}
+        </div>
+        <div className={tileValue4}>
+          {counter >= 4 && <div>{inputValue4}</div>}
+        </div>
+        <div className={tileValue4}>
+          {counter >= 4 && <div>{inputValue4}</div>}
+        </div>
+        <div className={tileValue4}>
+          {counter >= 4 && <div>{inputValue4}</div>}
+        </div>
+        <div className={tileValue4}>
+          {counter >= 4 && <div>{inputValue4}</div>}
+        </div>
+        <div className={tileValue4}>
+          {counter >= 4 && <div>{inputValue4}</div>}
+        </div>
+        <div className={tileValue5}>
+          {counter >= 5 && <div>{inputValue5}</div>}
+        </div>
+        <div className={tileValue5}>
+          {counter >= 5 && <div>{inputValue5}</div>}
+        </div>
+        <div className={tileValue5}>
+          {counter >= 5 && <div>{inputValue5}</div>}
+        </div>
+        <div className={tileValue5}>
+          {counter >= 5 && <div>{inputValue5}</div>}
+        </div>
+        <div className={tileValue5}>
+          {counter >= 5 && <div>{inputValue5}</div>}
+        </div>
+        <div className={tileValue6}>
+          {counter >= 6 && <div>{inputValue6}</div>}
+        </div>
+        <div className={tileValue6}>
+          {counter >= 6 && <div>{inputValue6}</div>}
+        </div>
+        <div className={tileValue6}>
+          {counter >= 6 && <div>{inputValue6}</div>}
+        </div>
+        <div className={tileValue6}>
+          {counter >= 6 && <div>{inputValue6}</div>}
+        </div>
+        <div className={tileValue6}>
+          {counter >= 6 && <div>{inputValue6}</div>}
+        </div>
       </div>
     </div>
   );
