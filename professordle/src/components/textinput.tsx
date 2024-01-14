@@ -1,14 +1,18 @@
 "use client";
 import React, { useState } from "react";
-import DropdownMenu from "./dropdownmenu";
 
 interface TextInputProps {
   onInputChange: (newValue: string) => void;
+  options: string[];
 }
-export const TextInput: React.FC<TextInputProps> = ({ onInputChange }) => {
+export const TextInput: React.FC<TextInputProps> = ({
+  onInputChange,
+  options,
+}) => {
   const [inputValue, setInputValue] = useState("");
 
-  const handleOptionSelect = (selectedOption: string) => {
+  const handleOptionClick = (selectedOption: string) => {
+    setIsFocused(false);
     setInputValue(selectedOption);
   };
 
@@ -914,7 +918,13 @@ export const TextInput: React.FC<TextInputProps> = ({ onInputChange }) => {
     "ZYLSTRA, STEPHEN",
   ];
 
-  const lowerArray = validWords.map((str) => str.toLowerCase());
+  const handleFocus = () => {
+    setIsFocused(true);
+  };
+
+  const handleBlur = () => {
+    setIsFocused(false);
+  };
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
@@ -923,11 +933,12 @@ export const TextInput: React.FC<TextInputProps> = ({ onInputChange }) => {
   };
 
   const handleEnterPress = () => {
-    if (!lowerArray.includes(inputValue.toLowerCase())) {
-      alert("invalid");
+    if (!validWords.includes(inputValue.toUpperCase())) {
+      alert("Invalid name!");
     } else {
       handleClear();
       onInputChange(inputValue);
+      setIsFocused(false);
     }
   };
 
@@ -935,14 +946,22 @@ export const TextInput: React.FC<TextInputProps> = ({ onInputChange }) => {
     // Clear the textbox
     setInputValue("");
   };
+  const [filteredOptions, setFilteredOptions] = useState(options);
 
   const handleChildInputChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     const newValue = event.target.value;
     setInputValue(newValue);
-    // Pass the input value to the parent component
+
+    const newFilteredOptions = options.filter((option) =>
+      option.toLowerCase().includes(newValue.toLowerCase())
+    );
+
+    setFilteredOptions(newFilteredOptions);
   };
+
+  const [isFocused, setIsFocused] = useState(false);
 
   return (
     <div>
@@ -950,19 +969,26 @@ export const TextInput: React.FC<TextInputProps> = ({ onInputChange }) => {
         <input
           type="text"
           value={inputValue}
+          onClick={handleFocus}
           onChange={handleChildInputChange}
           onKeyDown={handleKeyPress}
           style={{ color: "black", width: "600px" }}
-        />
-      </div>
-      <div className="bar">
-        <DropdownMenu
-          options={validWords}
-          onSelect={handleOptionSelect}
-        ></DropdownMenu>
-        <div className="subbutton" onClick={handleEnterPress}>
-          <button>Submit</button>
-        </div>
+        ></input>
+        <button className="subbutton" onClick={handleEnterPress}>
+          {" "}
+          Submit
+        </button>
+        {isFocused && (
+          <div className="dropdownmain">
+            <div className="dropdown-options">
+              {filteredOptions.map((option) => (
+                <div key={option} onClick={() => handleOptionClick(option)}>
+                  {option}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

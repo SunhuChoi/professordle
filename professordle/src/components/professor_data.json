@@ -907,7 +907,7 @@
   },
   {
     "name": "CAPETTINI, EMILIO",
-    "departments": ["Classics", "Classics"],
+    "departments": ["Classics"],
     "rating": "4",
     "difficulty": "3",
     "courses": ["CLASS 109", "GREEK 1", "CLASS 180A", "CLASS 185", "GREEK 210"]
@@ -1657,7 +1657,7 @@
   },
   {
     "name": "DUNN, FRANCIS",
-    "departments": ["Classics", "Literature", "Classics"],
+    "departments": ["Classics", "Literature"],
     "rating": "3.9",
     "difficulty": "2.8",
     "courses": ["CLASS 40", "CLASS 60", "C LIT 30A", "CLASS 175", "GREEK 2"]
@@ -1683,7 +1683,7 @@
   },
   {
     "name": "DUTSCH, DOROTA",
-    "departments": ["Classics", "Classics", "Classics"],
+    "departments": ["Classics"],
     "rating": "4.3",
     "difficulty": "2.9",
     "courses": ["CLASS 106", "LATIN 1", "INT 84AM", "LATIN 214", "GREEK 102"]
@@ -1773,7 +1773,7 @@
   },
   {
     "name": "ERICKSON, BRICE",
-    "departments": ["Classics", "Classics"],
+    "departments": ["Classics"],
     "rating": "4.8",
     "difficulty": "2.8",
     "courses": ["CLASS 40", "CLASS 170", "CLASS 50", "CLASS 165", "CLASS 155"]
@@ -3580,7 +3580,7 @@
   },
   {
     "name": "LINDHEIM, SARA",
-    "departments": ["Classics", "Classics"],
+    "departments": ["Classics"],
     "rating": "4.1",
     "difficulty": "2.9",
     "courses": ["CLASS 110", "LATIN 3", "LATIN 2", "LATIN 101", "LATIN 100"]
@@ -3818,7 +3818,7 @@
   },
   {
     "name": "MACLEAN, ROSE",
-    "departments": ["Classics", "Classics"],
+    "departments": ["Classics"],
     "rating": "5",
     "difficulty": "2.3",
     "courses": ["CLASS 140", "CLASS 70", "LATIN 1", "CLASS 233", "CLASS 185"]
@@ -4360,7 +4360,7 @@
   },
   {
     "name": "MORALES, HELEN",
-    "departments": ["Classics", "Classics"],
+    "departments": ["Classics"],
     "rating": "4.8",
     "difficulty": "2.5",
     "courses": ["CLASS 40", "CLASS 40H", "GREEK 10B", "GREEK 10A", "CLASS 232"]
@@ -4395,7 +4395,7 @@
   },
   {
     "name": "MORSTEIN-MARX, ROBERT",
-    "departments": ["Classics", "Classics", "Classics"],
+    "departments": ["Classics"],
     "rating": "4.8",
     "difficulty": "2.3",
     "courses": ["CLASS 20B", "CLASS 150", "CLASS 145", "CLASS 185", "LATIN 100"]
@@ -4581,7 +4581,7 @@
   },
   {
     "name": "NGUYEN, ALICE",
-    "departments": ["Biology", "Biology"],
+    "departments": ["Biology"],
     "rating": "1.1",
     "difficulty": "4.2",
     "courses": ["EEMB 2", "MCDB 1A", "EEMB 2LL", "MCDB 1B", "MCDB 1LL"]
@@ -4685,7 +4685,7 @@
   },
   {
     "name": "OONO, RYOKO",
-    "departments": ["Biology", "Biology"],
+    "departments": ["Biology"],
     "rating": "2.2",
     "difficulty": "4",
     "courses": ["EEMB 3", "EEMB 145", "EEMB 157C", "EEMB 595D", "EEMB 194D"]
@@ -5530,7 +5530,7 @@
   },
   {
     "name": "SEGAL, NOAH",
-    "departments": ["Classics", "Classics", "Classics"],
+    "departments": ["Classics"],
     "rating": "4.3",
     "difficulty": "2.6",
     "courses": ["CLASS 40", "CLASS 150", "CLASS 20B", "CLASS 130", "CLASS 170"]
@@ -5640,7 +5640,7 @@
   },
   {
     "name": "SHILO, AMIT",
-    "departments": ["Classics", "Classics"],
+    "departments": ["Classics"],
     "rating": "3.1",
     "difficulty": "2.8",
     "courses": ["CLASS 40", "CLASS 101", "GREEK 1", "GREEK 3", "GREEK 2"]
@@ -6989,7 +6989,7 @@
   },
   {
     "name": "YOUNG, HILLARY",
-    "departments": ["Biology", "Biology"],
+    "departments": ["Biology"],
     "rating": "2.8",
     "difficulty": "3.8",
     "courses": ["EEMB 120", "EEMB 113", "EEMB 113L", "EEMB 596", "EEMB 199"]
