@@ -141,7 +141,7 @@ export const Grid: React.FC = () => {
       }
 
       if (
-        JSON.stringify(hashMap[newValue].departments) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].departments) ===
         JSON.stringify(specificObject.departments)
       ) {
         setTileValue11("wordletiletrue");
@@ -149,20 +149,22 @@ export const Grid: React.FC = () => {
         setTileValue11("wordletilefalse");
       }
 
-      if (hashMap[newValue].rating === specificObject.rating) {
+      if (hashMap[newValue.toUpperCase()].rating === specificObject.rating) {
         setTileValue12("wordletiletrue");
       } else {
         setTileValue12("wordletilefalse");
       }
 
-      if (hashMap[newValue].difficulty === specificObject.difficulty) {
+      if (
+        hashMap[newValue.toUpperCase()].difficulty === specificObject.difficulty
+      ) {
         setTileValue13("wordletiletrue");
       } else {
         setTileValue13("wordletilefalse");
       }
 
       if (
-        JSON.stringify(hashMap[newValue].courses) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].courses) ===
         JSON.stringify(specificObject.courses)
       ) {
         setTileValue14("wordletiletrue");
@@ -170,12 +172,14 @@ export const Grid: React.FC = () => {
         setTileValue14("wordletilefalse");
       }
 
-      const concatenatedString = hashMap[newValue].departments.join(", ");
-      const concatenatedStringTwo = hashMap[newValue].courses.join(", ");
+      const concatenatedString =
+        hashMap[newValue.toUpperCase()].departments.join(", ");
+      const concatenatedStringTwo =
+        hashMap[newValue.toUpperCase()].courses.join(", ");
 
       setInputValueV1(concatenatedString);
-      setInputValueV2(hashMap[newValue].rating);
-      setInputValueV3(hashMap[newValue].difficulty);
+      setInputValueV2(hashMap[newValue.toUpperCase()].rating);
+      setInputValueV3(hashMap[newValue.toUpperCase()].difficulty);
       setInputValueV4(concatenatedStringTwo);
     } else if (counter === 2) {
       setInputValue2(newValue);
@@ -186,7 +190,7 @@ export const Grid: React.FC = () => {
         setTileValue2("wordletilefalse");
       }
       if (
-        JSON.stringify(hashMap[newValue].departments) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].departments) ===
         JSON.stringify(specificObject.departments)
       ) {
         setTileValue21("wordletiletrue");
@@ -194,20 +198,22 @@ export const Grid: React.FC = () => {
         setTileValue21("wordletilefalse");
       }
 
-      if (hashMap[newValue].rating === specificObject.rating) {
+      if (hashMap[newValue.toUpperCase()].rating === specificObject.rating) {
         setTileValue22("wordletiletrue");
       } else {
         setTileValue22("wordletilefalse");
       }
 
-      if (hashMap[newValue].difficulty === specificObject.difficulty) {
+      if (
+        hashMap[newValue.toUpperCase()].difficulty === specificObject.difficulty
+      ) {
         setTileValue23("wordletiletrue");
       } else {
         setTileValue23("wordletilefalse");
       }
 
       if (
-        JSON.stringify(hashMap[newValue].courses) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].courses) ===
         JSON.stringify(specificObject.courses)
       ) {
         setTileValue24("wordletiletrue");
@@ -215,12 +221,14 @@ export const Grid: React.FC = () => {
         setTileValue24("wordletilefalse");
       }
 
-      const concatenatedString = hashMap[newValue].departments.join(", ");
-      const concatenatedStringTwo = hashMap[newValue].courses.join(", ");
+      const concatenatedString =
+        hashMap[newValue.toUpperCase()].departments.join(", ");
+      const concatenatedStringTwo =
+        hashMap[newValue.toUpperCase()].courses.join(", ");
 
       setInputValue21(concatenatedString);
-      setInputValue22(hashMap[newValue].rating);
-      setInputValue23(hashMap[newValue].difficulty);
+      setInputValue22(hashMap[newValue.toUpperCase()].rating);
+      setInputValue23(hashMap[newValue.toUpperCase()].difficulty);
       setInputValue24(concatenatedStringTwo);
     } else if (counter === 3) {
       setInputValue3(newValue);
@@ -231,7 +239,7 @@ export const Grid: React.FC = () => {
         setTileValue3("wordletilefalse");
       }
       if (
-        JSON.stringify(hashMap[newValue].departments) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].departments) ===
         JSON.stringify(specificObject.departments)
       ) {
         setTileValue31("wordletiletrue");
@@ -239,20 +247,22 @@ export const Grid: React.FC = () => {
         setTileValue31("wordletilefalse");
       }
 
-      if (hashMap[newValue].rating === specificObject.rating) {
+      if (hashMap[newValue.toUpperCase()].rating === specificObject.rating) {
         setTileValue32("wordletiletrue");
       } else {
         setTileValue32("wordletilefalse");
       }
 
-      if (hashMap[newValue].difficulty === specificObject.difficulty) {
+      if (
+        hashMap[newValue.toUpperCase()].difficulty === specificObject.difficulty
+      ) {
         setTileValue33("wordletiletrue");
       } else {
         setTileValue33("wordletilefalse");
       }
 
       if (
-        JSON.stringify(hashMap[newValue].courses) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].courses) ===
         JSON.stringify(specificObject.courses)
       ) {
         setTileValue34("wordletiletrue");
@@ -260,12 +270,14 @@ export const Grid: React.FC = () => {
         setTileValue34("wordletilefalse");
       }
 
-      const concatenatedString = hashMap[newValue].departments.join(", ");
-      const concatenatedStringTwo = hashMap[newValue].courses.join(", ");
+      const concatenatedString =
+        hashMap[newValue.toUpperCase()].departments.join(", ");
+      const concatenatedStringTwo =
+        hashMap[newValue.toUpperCase()].courses.join(", ");
 
       setInputValue31(concatenatedString);
-      setInputValue32(hashMap[newValue].rating);
-      setInputValue33(hashMap[newValue].difficulty);
+      setInputValue32(hashMap[newValue.toUpperCase()].rating);
+      setInputValue33(hashMap[newValue.toUpperCase()].difficulty);
       setInputValue34(concatenatedStringTwo);
     } else if (counter === 4) {
       setInputValue4(newValue);
@@ -276,7 +288,7 @@ export const Grid: React.FC = () => {
         setTileValue4("wordletilefalse");
       }
       if (
-        JSON.stringify(hashMap[newValue].departments) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].departments) ===
         JSON.stringify(specificObject.departments)
       ) {
         setTileValue41("wordletiletrue");
@@ -284,20 +296,22 @@ export const Grid: React.FC = () => {
         setTileValue41("wordletilefalse");
       }
 
-      if (hashMap[newValue].rating === specificObject.rating) {
+      if (hashMap[newValue.toUpperCase()].rating === specificObject.rating) {
         setTileValue42("wordletiletrue");
       } else {
         setTileValue42("wordletilefalse");
       }
 
-      if (hashMap[newValue].difficulty === specificObject.difficulty) {
+      if (
+        hashMap[newValue.toUpperCase()].difficulty === specificObject.difficulty
+      ) {
         setTileValue43("wordletiletrue");
       } else {
         setTileValue43("wordletilefalse");
       }
 
       if (
-        JSON.stringify(hashMap[newValue].courses) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].courses) ===
         JSON.stringify(specificObject.courses)
       ) {
         setTileValue44("wordletiletrue");
@@ -305,12 +319,14 @@ export const Grid: React.FC = () => {
         setTileValue44("wordletilefalse");
       }
 
-      const concatenatedString = hashMap[newValue].departments.join(", ");
-      const concatenatedStringTwo = hashMap[newValue].courses.join(", ");
+      const concatenatedString =
+        hashMap[newValue.toUpperCase()].departments.join(", ");
+      const concatenatedStringTwo =
+        hashMap[newValue.toUpperCase()].courses.join(", ");
 
       setInputValue41(concatenatedString);
-      setInputValue42(hashMap[newValue].rating);
-      setInputValue43(hashMap[newValue].difficulty);
+      setInputValue42(hashMap[newValue.toUpperCase()].rating);
+      setInputValue43(hashMap[newValue.toUpperCase()].difficulty);
       setInputValue44(concatenatedStringTwo);
     } else if (counter === 5) {
       setInputValue5(newValue);
@@ -321,7 +337,7 @@ export const Grid: React.FC = () => {
         setTileValue5("wordletilefalse");
       }
       if (
-        JSON.stringify(hashMap[newValue].departments) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].departments) ===
         JSON.stringify(specificObject.departments)
       ) {
         setTileValue51("wordletiletrue");
@@ -329,20 +345,22 @@ export const Grid: React.FC = () => {
         setTileValue51("wordletilefalse");
       }
 
-      if (hashMap[newValue].rating === specificObject.rating) {
+      if (hashMap[newValue.toUpperCase()].rating === specificObject.rating) {
         setTileValue52("wordletiletrue");
       } else {
         setTileValue52("wordletilefalse");
       }
 
-      if (hashMap[newValue].difficulty === specificObject.difficulty) {
+      if (
+        hashMap[newValue.toUpperCase()].difficulty === specificObject.difficulty
+      ) {
         setTileValue53("wordletiletrue");
       } else {
         setTileValue53("wordletilefalse");
       }
 
       if (
-        JSON.stringify(hashMap[newValue].courses) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].courses) ===
         JSON.stringify(specificObject.courses)
       ) {
         setTileValue54("wordletiletrue");
@@ -350,12 +368,14 @@ export const Grid: React.FC = () => {
         setTileValue54("wordletilefalse");
       }
 
-      const concatenatedString = hashMap[newValue].departments.join(", ");
-      const concatenatedStringTwo = hashMap[newValue].courses.join(", ");
+      const concatenatedString =
+        hashMap[newValue.toUpperCase()].departments.join(", ");
+      const concatenatedStringTwo =
+        hashMap[newValue.toUpperCase()].courses.join(", ");
 
       setInputValue51(concatenatedString);
-      setInputValue52(hashMap[newValue].rating);
-      setInputValue53(hashMap[newValue].difficulty);
+      setInputValue52(hashMap[newValue.toUpperCase()].rating);
+      setInputValue53(hashMap[newValue.toUpperCase()].difficulty);
       setInputValue54(concatenatedStringTwo);
     } else if (counter === 6) {
       setInputValue6(newValue);
@@ -366,7 +386,7 @@ export const Grid: React.FC = () => {
         setTileValue6("wordletilefalse");
       }
       if (
-        JSON.stringify(hashMap[newValue].departments) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].departments) ===
         JSON.stringify(specificObject.departments)
       ) {
         setTileValue61("wordletiletrue");
@@ -374,20 +394,22 @@ export const Grid: React.FC = () => {
         setTileValue61("wordletilefalse");
       }
 
-      if (hashMap[newValue].rating === specificObject.rating) {
+      if (hashMap[newValue.toUpperCase()].rating === specificObject.rating) {
         setTileValue62("wordletiletrue");
       } else {
         setTileValue62("wordletilefalse");
       }
 
-      if (hashMap[newValue].difficulty === specificObject.difficulty) {
+      if (
+        hashMap[newValue.toUpperCase()].difficulty === specificObject.difficulty
+      ) {
         setTileValue63("wordletiletrue");
       } else {
         setTileValue63("wordletilefalse");
       }
 
       if (
-        JSON.stringify(hashMap[newValue].courses) ===
+        JSON.stringify(hashMap[newValue.toUpperCase()].courses) ===
         JSON.stringify(specificObject.courses)
       ) {
         setTileValue64("wordletiletrue");
@@ -395,12 +417,14 @@ export const Grid: React.FC = () => {
         setTileValue64("wordletilefalse");
       }
 
-      const concatenatedString = hashMap[newValue].departments.join(", ");
-      const concatenatedStringTwo = hashMap[newValue].courses.join(", ");
+      const concatenatedString =
+        hashMap[newValue.toUpperCase()].departments.join(", ");
+      const concatenatedStringTwo =
+        hashMap[newValue.toUpperCase()].courses.join(", ");
 
       setInputValue61(concatenatedString);
-      setInputValue62(hashMap[newValue].rating);
-      setInputValue63(hashMap[newValue].difficulty);
+      setInputValue62(hashMap[newValue.toUpperCase()].rating);
+      setInputValue63(hashMap[newValue.toUpperCase()].difficulty);
       setInputValue64(concatenatedStringTwo);
     }
   };
@@ -408,13 +432,13 @@ export const Grid: React.FC = () => {
   return (
     <div>
       <Menu onInputChange={handleMenuChange} />
-      <button onClick={handleRandomString}>Hi {randomString}</button>
+      <button onClick={handleRandomString}>Reveal Answer {randomString}</button>
       <div>
         <TextInput onInputChange={handleInputChange}></TextInput>
       </div>
       <div className="guess-grid">
         <div className={tileValue1}>
-          {counter >= 1 && <div>{inputValue1}</div>}
+          {counter >= 1 && <div>{inputValue1.toUpperCase()}</div>}
         </div>
         <div className={tileValue11}>
           {counter >= 1 && <div>{inputValueV1}</div>}
@@ -429,7 +453,7 @@ export const Grid: React.FC = () => {
           {counter >= 1 && <div>{inputValueV4}</div>}
         </div>
         <div className={tileValue2}>
-          {counter >= 2 && <div>{inputValue2}</div>}
+          {counter >= 2 && <div>{inputValue2.toUpperCase()}</div>}
         </div>
         <div className={tileValue21}>
           {counter >= 2 && <div>{inputValue21}</div>}
@@ -444,7 +468,7 @@ export const Grid: React.FC = () => {
           {counter >= 2 && <div>{inputValue24}</div>}
         </div>
         <div className={tileValue3}>
-          {counter >= 3 && <div>{inputValue3}</div>}
+          {counter >= 3 && <div>{inputValue3.toUpperCase()}</div>}
         </div>
         <div className={tileValue31}>
           {counter >= 3 && <div>{inputValue31}</div>}
@@ -459,7 +483,7 @@ export const Grid: React.FC = () => {
           {counter >= 3 && <div>{inputValue34}</div>}
         </div>
         <div className={tileValue4}>
-          {counter >= 4 && <div>{inputValue4}</div>}
+          {counter >= 4 && <div>{inputValue4.toUpperCase()}</div>}
         </div>
         <div className={tileValue41}>
           {counter >= 4 && <div>{inputValue41}</div>}
@@ -474,7 +498,7 @@ export const Grid: React.FC = () => {
           {counter >= 4 && <div>{inputValue44}</div>}
         </div>
         <div className={tileValue5}>
-          {counter >= 5 && <div>{inputValue5}</div>}
+          {counter >= 5 && <div>{inputValue5.toUpperCase()}</div>}
         </div>
         <div className={tileValue51}>
           {counter >= 5 && <div>{inputValue51}</div>}
@@ -489,7 +513,7 @@ export const Grid: React.FC = () => {
           {counter >= 5 && <div>{inputValue54}</div>}
         </div>
         <div className={tileValue6}>
-          {counter >= 6 && <div>{inputValue6}</div>}
+          {counter >= 6 && <div>{inputValue6.toUpperCase()}</div>}
         </div>
         <div className={tileValue61}>
           {counter >= 6 && <div>{inputValue61}</div>}

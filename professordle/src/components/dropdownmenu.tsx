@@ -17,10 +17,8 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ options, onSelect }) => {
   };
 
   return (
-    <div className="dropdown">
-      <button className="dropdown-button" onClick={() => setIsOpen(!isOpen)}>
-        {selectedOption || "Select an option"}
-      </button>
+    <div className="dropdownmain" onClick={() => setIsOpen(!isOpen)}>
+      <button className="dropdown-button">{selectedOption || "Select"}</button>
       {isOpen && (
         <div className="dropdown-options">
           {options.map((option) => (

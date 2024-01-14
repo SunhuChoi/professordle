@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: hsl(240, 3%, 7%);
+  background-color: rgb(48, 93, 254);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  padding: 1em;
+  padding: 0.05em;
   font-size: clamp(0.5rem, 2.5vmin, 1.5rem);
 }
 
@@ -29,7 +29,25 @@ body {
   align-items: center;
 }
 
-.key {
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.subbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 2, 34);
+  background-color: rgb(53, 214, 74);
+  border: 0.08em solid hsl(240, 2%, 23%);
+  border-radius: 15px;
+  width: 200px;
+}
+
+/* .key {
   font-size: inherit;
   grid-column: span 2;
   border: none;
@@ -42,7 +60,7 @@ body {
     var(--saturation, 1%),
     calc(var(--lightness-offset, 0%) + var(--lightness, 51%))
   );
-  color: white;
+  color: rgb(255, 255, 255);
   fill: white;
   text-transform: lowercase;
   border-radius: 0.25em;
@@ -78,7 +96,7 @@ body {
   --hue: 115;
   --saturation: 29%;
   --lightness: 43%;
-}
+} */
 
 .guess-grid {
   display: grid;
@@ -93,26 +111,31 @@ body {
 
 .wordletiletrue {
   font-size: 0.5em;
-  color: rgb(0, 255, 34);
-  border: 0.05em solid hsl(240, 2%, 23%);
+  color: rgb(251, 251, 251);
+  background-color: hsla(115, 96%, 59%, 0.692);
+  border: 0.05em solid hsl(0, 26%, 43%);
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
   user-select: none;
   transition: transform 250ms linear;
+  border-radius: 5px;
 }
 
 .wordletilefalse {
   font-size: 0.5em;
-  color: red;
-  border: 0.05em solid hsl(240, 2%, 23%);
+  color: rgb(255, 255, 255);
+  background-color: hsla(0, 95%, 54%, 0.692);
+  border: 0.05em solid hsl(0, 100%, 95%);
+  width: 8em;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
   user-select: none;
   transition: transform 250ms linear;
+  border-radius: 5px;
 }
 
 .tile[data-state="active"] {
@@ -229,6 +252,22 @@ body {
 
 .dropdown {
   background-color: hsl(0, 0%, 100%);
-  border: 0.05em solid hsl(240, 2%, 23%);
-  color: black;
+  border: 0.08em solid hsl(240, 2%, 23%);
+  color: rgb(0, 0, 0);
+}
+
+.dropdownmain {
+  background-color: hsla(0, 0%, 100%, 0.692);
+  border: 0.08em solid hsl(240, 2%, 23%);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  /* height: 38px; */
+  border-radius: 10px;
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
