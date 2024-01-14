@@ -91,14 +91,21 @@ body {
   margin-bottom: 1em;
 }
 
-.fonter {
-  color: white;
-  font-weight: bold;
-}
-
-.wordletile {
+.wordletiletrue {
   font-size: 0.5em;
   color: white;
+  border: 0.05em solid hsl(240, 2%, 23%);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: transform 250ms linear;
+}
+
+.wordletilefalse {
+  font-size: 0.5em;
+  color: rgb(255, 0, 0);
   border: 0.05em solid hsl(240, 2%, 23%);
   font-weight: bold;
   display: flex;

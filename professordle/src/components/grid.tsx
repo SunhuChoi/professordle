@@ -2712,16 +2712,9 @@ export const Grid: React.FC = () => {
   ];
 
   const [inputValue, setInputValue] = useState("");
-  const [divStyle, setDivStyle] = useState<React.CSSProperties>({});
 
   const handleInputChange = (newValue: string) => {
     setInputValue(newValue);
-    setDivStyle({
-        backgroundColor: inputValue.length > 0 ? 'lightgreen' : 'lightcoral',
-        padding: '10px',
-        margin: '10px',
-        borderRadius: '5px',
-      });
   };
 
   const randomIndex = Math.floor(Math.random() * options.length);
@@ -2734,7 +2727,7 @@ export const Grid: React.FC = () => {
         {randomWord}
       </div>
       <div className="guess-grid">
-        <div className="wordletile"></div>
+        <div className="wordletile">{inputValue}</div>
         <div className="wordletile"></div>
         <div className="wordletile"></div>
         <div className="wordletile"></div>
